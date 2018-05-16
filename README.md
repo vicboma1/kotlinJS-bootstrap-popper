@@ -33,13 +33,6 @@ fun main(args: Array<String>) {
 
 ## Body 
 ```kotlin
-package bootStrap
-
-import kotlinx.html.*
-import kotlinx.html.dom.create
-import kotlinx.html.js.div
-import kotlin.browser.document
-
 fun panelBody() =
         document.create.div {
             classes=setOf("panel-body")
@@ -250,13 +243,6 @@ private fun FORM.formGroupName() {
 
 ## Footer
 ```kotlin
-
-package bootStrap
-
-import kotlinx.html.*
-import kotlinx.html.dom.create
-import kotlin.browser.document
-
 fun panelFoorter()=
         document.create.div {
             classes = setOf("panel-footer")
@@ -286,16 +272,20 @@ private fun DIV.colButton() {
 
 ```
 
+## Header 
+```kotlin
+fun panelHeader() =
+        document.create.div {
+            classes = setOf("panel-heading")
+            h3 {
+                classes = setOf("panel-title text-center")
+                +"Formulario w/ Kotlin JS - vicboma1"
+            }
+}
+```
+
 ## ShowModal
 ```kotlin
-
-package bootStrap
-
-import kotlinx.html.*
-import kotlinx.html.dom.create
-import kotlinx.html.js.div
-import kotlin.browser.document
-
 fun showDialog() =
         document.create.div {
             classes= setOf("modal fade")
