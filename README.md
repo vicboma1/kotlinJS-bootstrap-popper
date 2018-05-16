@@ -13,6 +13,25 @@
 * Bootstrap Theme 3.3.7
  
 
+## From Html to KotlinJS DSL
+```html
+
+<div class="panel-heading">
+    <h3 class="panel-title text-center">Formulario w/ Kotlin JS - vicboma1</h3>
+</div>
+```
+
+```kotlin
+document.create.div {
+   classes = setOf("panel-heading")
+   h3 {
+       classes = setOf("panel-title text-center")
+       +"Formulario w/ Kotlin JS - vicboma1"
+   }
+}
+```
+
+
 ## Form
 ![](https://raw.githubusercontent.com/vicboma1/kotlinJS-bootstrap-popper/master/assets/jsForm.gif)
 
